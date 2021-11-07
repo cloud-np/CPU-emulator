@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ask_6_organwsh"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ask_6_organwsh">
+				<Option output="/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/ask_6_organwsh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 ask_6_organwsh"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ask_6_organwsh/fast">
+				<Option output="/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/ask_6_organwsh" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 ask_6_organwsh/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/cloud/CLionProjects/ask_6_organwsh/helpers.h">
+			<Option target="ask_6_organwsh"/>
+		</Unit>
+		<Unit filename="/home/cloud/CLionProjects/ask_6_organwsh/main.c">
+			<Option target="ask_6_organwsh"/>
+		</Unit>
+		<Unit filename="/home/cloud/CLionProjects/ask_6_organwsh/mips.c">
+			<Option target="ask_6_organwsh"/>
+		</Unit>
+		<Unit filename="/home/cloud/CLionProjects/ask_6_organwsh/parse_mips.h">
+			<Option target="ask_6_organwsh"/>
+		</Unit>
+		<Unit filename="/home/cloud/CLionProjects/ask_6_organwsh/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
