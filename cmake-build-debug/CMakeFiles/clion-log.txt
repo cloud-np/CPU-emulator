@@ -1,4 +1,4 @@
-/app/extra/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/cloud/CLionProjects/ask_6_organwsh
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/nick9/CLionProjects/CPU-emulator
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/cloud/CLionProjects/ask_6_organwsh/cmake-build-debug
+-- Build files have been written to: /mnt/c/Users/nick9/CLionProjects/CPU-emulator/cmake-build-debug

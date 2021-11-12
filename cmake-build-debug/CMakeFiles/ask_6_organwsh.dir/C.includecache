@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cloud/CLionProjects/ask_6_organwsh/helpers.h
+/mnt/c/Users/nick9/CLionProjects/CPU-emulator/helpers.h
 stdio.h
 -
 stdlib.h
@@ -18,31 +18,39 @@ ctype.h
 string.h
 -
 
-/home/cloud/CLionProjects/ask_6_organwsh/main.c
+/mnt/c/Users/nick9/CLionProjects/CPU-emulator/main.c
 stdio.h
 -
 stdbool.h
 -
 parse_mips.h
-/home/cloud/CLionProjects/ask_6_organwsh/parse_mips.h
+/mnt/c/Users/nick9/CLionProjects/CPU-emulator/parse_mips.h
 
-/home/cloud/CLionProjects/ask_6_organwsh/memory.c
+/mnt/c/Users/nick9/CLionProjects/CPU-emulator/memory.c
 memory.h
-/home/cloud/CLionProjects/ask_6_organwsh/memory.h
+/mnt/c/Users/nick9/CLionProjects/CPU-emulator/memory.h
 stdio.h
 -
 stdlib.h
 -
 
-/home/cloud/CLionProjects/ask_6_organwsh/memory.h
+/mnt/c/Users/nick9/CLionProjects/CPU-emulator/memory.h
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+stddef.h
+-
 
-/home/cloud/CLionProjects/ask_6_organwsh/parse_mips.h
+/mnt/c/Users/nick9/CLionProjects/CPU-emulator/parse_mips.h
 stdio.h
 -
 stdlib.h
 -
 helpers.h
-/home/cloud/CLionProjects/ask_6_organwsh/helpers.h
+/mnt/c/Users/nick9/CLionProjects/CPU-emulator/helpers.h
 memory.c
-/home/cloud/CLionProjects/ask_6_organwsh/memory.c
+/mnt/c/Users/nick9/CLionProjects/CPU-emulator/memory.c
 

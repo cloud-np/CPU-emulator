@@ -4,7 +4,7 @@
 #include "memory.c"
 #define PARSE_FILE "../input_file.txt"
 
-static int find_opcode(const char* token){
+static int find_cmd(const char* token){
     if (strcmp(token, "lw") == 0){
         return lw;
     }else if(strcmp(token, "sw") == 0){
@@ -51,14 +51,14 @@ static void parse_token(char* token, size_t token_count, MemoryBlock* mem){
         if(token[strlen(token) - 1] == ':'){
             token[strlen(token) - 1] = 0;
             mem->label = copy_str(mem->label, token);
-//            printf("label: %s\n", ram->label);
+//            printf("label: %s\n", instr_memory->label);
         }
         int number;
         switch (mem->type) {
             case JType:
                 if(does_str_contain_char(token))
                     mem->j_label = copy_str(mem->j_label, token);
-//                else set_target(get_int_from_str(token), ram);
+//                else set_target(get_int_from_str(token), instr_memory);
                 break;
             case IType:
                 number = get_int_from_str(token);
@@ -100,23 +100,23 @@ static void parse_token(char* token, size_t token_count, MemoryBlock* mem){
                             set_rt(number, mem);
 //                          printf("rt: %d\n", number);
                         }
-//                      printf("func: %u\n", ram->cmd);
+//                      printf("func: %u\n", instr_memory->cmd);
                         break;
                 }
                 break;
         }
     }else{
-        int opcode = find_opcode(token);
-        if(opcode != -1){
-            mem->type = find_instruction_type(opcode);
-            mem->cmd = opcode;
+        uint32_t cmd = find_cmd(token);
+        if(cmd != -1){
+            mem->type = find_instruction_type(cmd);
+            mem->cmd = cmd;
             if (mem->type == RType)
-                set_func(opcode, mem);
-            set_opcode(opcode, mem);
+                set_func(cmd, mem);
+            set_opcode(cmd, mem);
         }
     }
 
-//    printf("curr val: %u", ram->val);
+//    printf("curr val: %u", instr_memory->val);
 //    for(int i = 0; i < strlen(token); i++){
 //        char c = token[i];
 //        if(c == ':'){
@@ -149,7 +149,7 @@ static Memory* read_file(){
             if(token == NULL) break;
             parse_token(token, i - 1, memory_block);
         }
-        memory->ram[j++] = memory_block;
+        memory->instr_memory[j++] = memory_block;
     }
     memory->len = j;
 

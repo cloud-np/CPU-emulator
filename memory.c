@@ -15,7 +15,7 @@ unsigned int test(){
     return 19;
 }
 
-CmdType find_instruction_type(int opcode){
+CmdType find_instruction_type(uint32_t opcode){
     switch (opcode) {
         case lw:
         case sw:
@@ -40,7 +40,7 @@ CmdType find_instruction_type(int opcode){
     }
 }
 
-unsigned int get_opcode(unsigned int val){
+uint32_t get_opcode(uint32_t val){
     return MID(val, 26, 31);
 }
 
@@ -127,20 +127,40 @@ void set_func(Commands cmd, MemoryBlock* memory_block){
     }
 }
 
+uint32_t get_rs(uint32_t val){
+    return MID(val, 21, 25);
+}
+
 void set_rs(unsigned int rs, MemoryBlock* memory_block){
     memory_block->val |= (rs << 21);
+}
+
+uint32_t get_rt(uint32_t val){
+    return MID(val, 16, 20);
 }
 
 void set_rt(unsigned int rt, MemoryBlock* memory_block){
     memory_block->val |= (rt << 16);
 }
 
+uint32_t get_imm(uint32_t val){
+    return MID(val, 0, 15);
+}
+
 void set_imm(int imm, MemoryBlock* memory_block){
     memory_block->val |= imm;
 }
 
+uint32_t get_rd(uint32_t val){
+    return MID(val, 11, 15);
+}
+
 void set_rd(unsigned int rd, MemoryBlock* memory_block){
     memory_block->val |= rd << 11;
+}
+
+uint32_t get_shamt(uint32_t val){
+    return MID(val, 0, 6);
 }
 
 void set_shamt(unsigned int shamt, MemoryBlock* memory_block){

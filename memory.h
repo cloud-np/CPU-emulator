@@ -1,4 +1,8 @@
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
+
 // I-Type opcodes
 #define LW_OPCODE 0b100011
 #define SW_OPCODE 0b101011
@@ -33,7 +37,7 @@
 #define MEMORY_SIZE 10
 
 
-typedef enum {IType, JType, RType, NoneType=-1} CmdType;
+typedef enum {RType=0, IType, JType, NoneType=-1} CmdType;
 typedef enum {lw, sw, add, sub, addi, slt, slti, beq, bne, j, jr, jal, jalr, nor, _break} Commands;
 
 typedef struct State {
@@ -51,13 +55,13 @@ typedef struct MemoryBlock {
 }MemoryBlock;
 
 typedef struct Memory {
-    MemoryBlock** ram;
+    MemoryBlock** instr_memory;
     size_t len;
 }Memory;
 
 static Memory* new_Memory(){
     Memory* memory = (Memory*) malloc(sizeof(Memory));
-    memory->ram = (MemoryBlock**) malloc(sizeof(MemoryBlock*) * MEMORY_SIZE);
+    memory->instr_memory = (MemoryBlock**) malloc(sizeof(MemoryBlock*) * MEMORY_SIZE);
     return memory;
 }
 
@@ -69,7 +73,7 @@ static MemoryBlock* new_MemoryBlock(){
 
 static void free_memory(Memory* memory){
     for(int i = 0; i < memory->len; i++)
-        free(memory->ram[i]);
+        free(memory->instr_memory[i]);
 }
 
 static State* new_State(){
