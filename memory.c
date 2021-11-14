@@ -15,7 +15,7 @@ unsigned int test(){
     return 19;
 }
 
-CmdType find_instruction_type(uint32_t opcode){
+CmdType find_instruction_type(uint opcode){
     switch (opcode) {
         case lw:
         case sw:

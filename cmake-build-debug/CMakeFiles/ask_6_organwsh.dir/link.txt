@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/ask_6_organwsh.dir/main.c.o CMakeFiles/ask_6_organwsh.dir/mips.c.o  -o ask_6_organwsh 
+/usr/bin/cc -g CMakeFiles/ask_6_organwsh.dir/main.c.o -o ask_6_organwsh 
